@@ -2,6 +2,13 @@ package main
 
 import "fmt"
 
+type User struct {
+	Name string
+}
+
 func main() {
-	fmt.Println("Hello World")
+	user := &User{
+		Name: "John",
+	}
+	fmt.Println(user)
 }
